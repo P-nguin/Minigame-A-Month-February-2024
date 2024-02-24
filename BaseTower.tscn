@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://cllhto2xfqtgx"]
+
+[ext_resource type="Script" path="res://BaseTower.gd" id="1_aof05"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_u1sjy"]
+
+[node name="BaseTower" type="Node2D"]
+script = ExtResource("1_aof05")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+
+[node name="Timer" type="Timer" parent="."]
+
+[node name="Range" type="Area2D" parent="."]
+
+[node name="RangeCollision" type="CollisionShape2D" parent="Range"]
+shape = SubResource("CircleShape2D_u1sjy")
